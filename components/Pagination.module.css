@@ -1,0 +1,22 @@
+.buttonDiv{
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+.button{
+    width: 30px;
+    height: 100%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.button:focus{
+    background-color: blue;
+}
+
+

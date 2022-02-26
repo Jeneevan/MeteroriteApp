@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meteorite Explorer App 
 
-## Getting Started
+## Next JS app that fetches data from Nasa API to display a table with content based on meteorites that landed on earth.
 
-First, run the development server:
+### Overview
+This project was created as a submission piece for Voyage 38 with Chingu. The goal of this project is to demonstrate my skills as a developer by connecting front end with backend development by fetching data from a NASA API and display that data on to the front end, through the use of a table. The project makes primary use of a search filter to search for specific data needed. There are no limits to the search filter, the user can find anything such as the mass, geolocation, name, id etc of a particular meteorite. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Features 
+The project's two main features includes: 
+  - Search Filter 
+      - The search filter allows users to filter through the data that was fetched. Inputs put into the search bar will only be rendered after clicking the search button.
+      - If "" is entered into the search filter the results will show all data. It will show all 1000 results when "" string is entered.
+      - If search button is pressed again after submitting an empty string, the results will reset to the original home page, with pagination enabled. (100 on each row)
+  - Pagination
+      - defaulted only to when all data is displayed, when the search button is pressed the pagination will dissapear and all results will be displayed on page
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Project 
+Locally: 
+Simple download the project from github repository, and then use "npm i " to install all dependencies, then run the command "npm run dev" to start the development server on localhost:3000.
+Live: 
+Click the link [here]. This will direct you the live link available. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Dependencies 
+  - Next JS
+  - React JS

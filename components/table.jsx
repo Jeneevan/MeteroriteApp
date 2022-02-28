@@ -52,10 +52,7 @@ function MeteoriteTable() {
     setSearchTerm(searchRef.current.value);
     if (searchTerm !== "") {
       setStart(0);
-      setEnd(1000);
-    } else {
-      setStart(0);
-      setEnd(100);
+      setEnd(100)
     }
   }
 

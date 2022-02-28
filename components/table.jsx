@@ -50,9 +50,12 @@ function MeteoriteTable() {
   function handleSubmit(event) {
     event.preventDefault();
     setSearchTerm(searchRef.current.value);
-    if (searchTerm !== "") {
+    if (searchTerm === "") {
       setStart(0);
       setEnd(100)
+    } else {
+      setStart(0)
+      setEnd(1000)
     }
   }
 
